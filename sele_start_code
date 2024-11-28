@@ -1,5 +1,10 @@
+# Podstawy selenium
 from selenium import webdriver
 from time import sleep
 
-driver = webdriver.Chrome()
-sleep(5)
+driver = webdriver.Chrome() #open chrome app
+driver.get("http://www.engicertproject.pl") #go to link
+driver.maximize_window() #maximize opened window
+driver.save_screenshot("ss.png") #take a screenshot and save it as a png file
+sleep(15) #wait 15 seconds 
+driver.quit()
